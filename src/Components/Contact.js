@@ -36,7 +36,8 @@ const Contact = () => {
       const data = {...formData}
       console.log(data)
       Axios.post("http://localhost:4000/contact/",data)
-      .then((res)=>{
+      .then((res)=>{ 
+          alert("your contact details sent successfully");
           console.log(res.data)
       }).catch((err)=>{
           console.log(err);
